@@ -1,4 +1,4 @@
-sh start_minikube.sh
+./start_minikube.sh
 
 rm -fr "${KF_PROJECT_NAME}"
 mkdir "${KF_PROJECT_NAME}"
