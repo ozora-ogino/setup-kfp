@@ -15,9 +15,9 @@ make install-kfctl
 ## How to use
 
 ### Installation
-
+This script starts minikube and install Kubeflow.
 ```bash
-make install
+make start
 ```
 
 ### Forward UI

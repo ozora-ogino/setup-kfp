@@ -1,8 +1,8 @@
-install-kfpctl:
+install-kfctl:
 	source env.sh
 	./local/install_kfctl.sh
 
-install:
+start:
 	./setup.sh
 
 ui:
