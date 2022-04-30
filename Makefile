@@ -1,9 +1,7 @@
-install-kfctl:
-	source env.sh
-	./local/install_kfctl.sh
-
-start:
-	./setup.sh
+setup:
+	rm -fr manifests
+	git clone https://github.com/kubeflow/manifests
+	cd manifests && ./hack/setup-kubeflow.sh
 
 ui:
-	./local/port-forward.sh
+	kubectl port-forward svc/istio-ingressgateway -n istio-system 7777:80./local/port-forward.sh
